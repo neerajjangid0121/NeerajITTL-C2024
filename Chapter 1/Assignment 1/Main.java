@@ -11,8 +11,8 @@ public class Main {
 
         if (adjacentCountries.length > 0) {
             System.out.println("Adjacent countries to " + countryCode + ":");
-            for (String country : adjacentCountries) {
-                System.out.println("- " + country);
+            for (String adjacentCountry : adjacentCountries) {
+                System.out.println("- " + adjacentCountry);
             }
         } else {
             System.out.println("No data available for the provided country code or the country has no adjacent countries.");
