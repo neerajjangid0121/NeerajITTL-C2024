@@ -1,0 +1,10 @@
+City design --
+
+City -> developInfrastructure -> planRoutes -> findAreaOfDevelopment
+					    -> findProblems
+			      -> planCity -> designBuildings
+					  -> designPublicParks
+     ->	developMedicalServices -> establishAmbulanceService
+			       -> designHospitals
+     -> establishEducationDepartments -> establishEducationPolicies
+				      -> planEducationalAreas
