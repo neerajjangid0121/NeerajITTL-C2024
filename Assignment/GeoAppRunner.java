@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class GeoAppRunner {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Place Name: ");
         String placeName = scanner.nextLine();
