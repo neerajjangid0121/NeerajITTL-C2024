@@ -1,7 +1,7 @@
 package org.tests.unittests;
 
 import org.testng.annotations.Test;
-
+import org.tests.DivisorCalculator;
 import static org.testng.Assert.assertEquals;
 
 public class DivisorCalculatorTest {
