@@ -3,14 +3,18 @@ package org.tests;
 public class DivisorCalculator {
 
     public static int countPairs(int maxNumber) {
-        int result = 0;
+        if (maxNumber <= 0) {
+            throw new IllegalArgumentException("number should be greater than 0");
+        } else {
+            int result = 0;
 
-        for (int counter = 2; counter < maxNumber; ++counter) {
-            if (countDivisors(counter) == countDivisors(counter + 1)) {
-                ++result;
+            for (int counter = 2; counter < maxNumber; ++counter) {
+                if (countDivisors(counter) == countDivisors(counter + 1)) {
+                    ++result;
+                }
             }
+            return result;
         }
-        return result;
     }
 
     private static int countDivisors(int number) {
