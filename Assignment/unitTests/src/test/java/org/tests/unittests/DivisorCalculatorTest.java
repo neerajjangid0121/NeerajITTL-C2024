@@ -17,4 +17,12 @@ public class DivisorCalculatorTest {
     public void testCountDivisorsPair_For_100() {
         assertEquals(DivisorCalculator.countPairs(100), 15);
     }
+    @Test(expectedExceptions = IllegalArgumentException.class)
+    public void testCountPairs_throwExceptionOnNegativeInput() {
+        DivisorCalculator.countPairs(-5);
+    }
+    @Test(expectedExceptions = IllegalArgumentException.class)
+    public void testCountPairs_throwExceptionOnZeroInput() {
+        DivisorCalculator.countPairs(0);
+    }
 }
