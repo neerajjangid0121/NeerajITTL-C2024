@@ -6,15 +6,15 @@ import static org.testng.Assert.assertEquals;
 
 public class DivisorCalculatorTest {
     @Test
-    public void testCountDivisorsPair_ValidPair() {
+    public void testCountDivisorsPair_For_3() {
         assertEquals(DivisorCalculator.countPairs(3), 1);
     }
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testCountPairs_throwExceptionOnNegativeInput() {
-        DivisorCalculator.countPairs(-5);
+    @Test
+    public void testCountDivisorsPair_For_15() {
+        assertEquals(DivisorCalculator.countPairs(15), 2);
     }
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testCountPairs_throwExceptionOnZeroInput() {
-        DivisorCalculator.countPairs(0);
+    @Test
+    public void testCountDivisorsPair_For_100() {
+        assertEquals(DivisorCalculator.countPairs(100), 15);
     }
 }

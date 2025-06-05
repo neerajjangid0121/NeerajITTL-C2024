@@ -3,23 +3,10 @@ package org.tests;
 public class DivisorCalculator {
 
     public static int countPairs(int maxNumber) {
-        if (maxNumber <= 0) throw new IllegalArgumentException("number should be > 0");
-        int result = 0;
-        for (int n = 2; n < maxNumber; n++) {
-            if (countDivisors(n) == countDivisors(n + 1)) {
-                result++;
-            }
-        }
-        return result;
+        return 0;
     }
 
     private static int countDivisors(int number) {
-        int count = 0;
-        for (int i = 1; i * i <= number; i++) {
-            if (number % i == 0) {
-                count += (number / i == i) ? 1 : 2;
-            }
-        }
-        return count;
+        return 0;
     }
 }
